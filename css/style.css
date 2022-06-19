@@ -1,0 +1,494 @@
+/*-----Сброс-----*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+
+  font-family: 'Montserrat', sans-serif;
+  color: #898989;
+    background: #fff;
+    background-color:  #F7F7F7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*** глобальный контейнер ***/
+  .wrapper-container {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+   }
+
+/*** О проекте и почта/телеграм верстальщика ***/
+  .banner-about-contacts-coder {
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding-top: 10px;   
+    color: rgb(33, 33, 33);
+    background-color:  #FFF;
+  }
+
+  .text-about-coder {  }
+
+  .text-about-coder > h3 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 2.22px;
+    color: rgb(3, 3, 3);
+   }
+
+  .text-about-coder > h5 {
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 2.22px;
+    color: rgb(3, 3, 3);
+  }
+
+  .text-contacts-coder {  }
+
+  .text-contacts-coder > h3 {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    color: rgb(33, 33, 33);
+   }
+
+  .text-contacts-coder > h5 {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    color: rgb(33, 33, 33);
+   }
+
+ /*** логотип и навигация в header ***/  
+  .logotip-top {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 87px;
+    min-height: 50px;
+   }
+
+  .logotip-top > a > img {
+    width: 100%;
+    height: 100%;
+  } 
+
+  .header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    min-height: 102px;
+    height: auto;
+  }
+
+  .nav-left {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    justify-content: space-around;
+    height: auto;
+   }
+  
+  .nav-left > a {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px 5px 20px;
+    height: auto;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    color: rgb(33, 33, 33);
+   }
+
+  .nav-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    justify-content: space-around;
+    height: auto;
+   }
+  
+  .nav-right > a {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 20px 5px 20px;
+    height: auto;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    color: rgb(33, 33, 33);
+   }
+
+/*** Заголовок о новой коллекции Ролекс ***/
+  .banner-new-wathes {
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 90px;    
+    color: rgb(33, 33, 33);
+   }
+
+  .text-new-wathes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .text-new-wathes > h1 {
+    font-size: 42px;
+    line-height: 46px;
+    font-weight: 500;
+    letter-spacing: 4.22px;
+    color: rgb(33, 33, 33);
+   }
+
+  .text-rolex-wathes {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+  }
+
+  .text-rolex-wathes > h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 4.4px;
+    color: rgb(33, 33, 33);
+   }
+
+/*** Витрина с новой коллекцией Ролекс 2022 ***/   
+  .vitrina-container {
+     margin-top: 20px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: flex-start;
+     max-width: 1200px;
+     width: 100%;
+     min-height: 2850px;
+     height: auto;
+     background-color:  #F7F7F7;
+    }
+
+   .row-cell-container {
+     margin-top: 30px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     max-width: 1200px;
+     width: 100%;
+     min-height: 390px;
+     height: auto;
+   }
+
+/*** карточка с картинкой и описанием часов ***/
+   .wathes-cell {
+    margin: 0px auto;
+    max-width: 380px;
+    min-height: 390px;
+    width: 100%;
+    height: auto;
+    background-color:  #FFFFFF;
+    }
+
+   .image-wathes {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    max-width: 309px;
+    max-height: 309px;
+    width: 100%;
+    height: auto;
+  }
+
+   .image-wathes > a > img {
+    max-width: 309px;
+    max-height: 309px;
+    width: 100%;
+    height: auto;
+   }
+
+   .name-wathes {   }
+
+   .name-wathes > h2 {
+    margin: 0px auto;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    line-height: 14.82px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .material-wathes {  }
+
+  .material-wathes > h2 {
+    margin: 0px auto;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.0px;
+    line-height: 14.82px;
+    text-align: center;
+    color: #000f;
+   }
+
+  .text-new-model {  }
+
+  .text-new-model > h2 {
+    margin: 0px auto;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 14.82px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000f;
+   }
+  
+/*** двухстрочный контейнер с карточками ***/   
+  .two-row-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: center;
+     max-width: 1200px;
+     width: 100%;
+     min-height: 780px;
+     height: auto;
+   }
+
+/*** двухколоночный двухстрочный контейнер ***/   
+   .two-column-row-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     max-width: 780px;
+     width: 100%;
+     min-height: 780px;
+     height: auto;
+     background-color:  #F7F7F7;
+   }
+
+/*** одноколоночный двухстрочный контейнер ***/  
+   .one-column-right {
+     margin-top: 0px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     max-width: 380px;
+     width: 100%;
+     min-height: 780px;
+     height: auto;
+     background-color:  #F7F7F7;
+   }
+
+/*** Исторические сведения о Ролекс ***/
+   .about-rolex-cell {
+    margin-top: 0px;
+    padding-top: 50px;
+    max-width: 380px;
+    width: 100%;
+    min-height: 780px;
+    height: auto;
+   }
+
+   .image-rolex-history {
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    max-width: 180px;
+    max-height: 154px;
+    width: 100%;
+    height: auto;
+  }
+
+   .image-rolex-history > a > img {
+    max-width: 180px;
+    max-height: 154px;
+    width: 100%;
+    height: auto;
+   }
+
+   .text-history-tema > p {
+    margin: 0px auto;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    line-height: 25px;
+    text-align: center;
+    color: #000;
+   }
+
+   .text-history-post {
+    margin: 0px auto;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    line-height: 22px;
+    text-align: center;
+    color: #000;
+   }
+   
+/******** footer **********************/
+   .footer-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: flex-start;
+     max-width: 1440px;
+     width: 100%;
+     min-height: 800px;
+     height: auto;
+     background-color:  #000;     
+   }
+ 
+   .footer-column-content {
+    margin-top: 50px;
+    max-width: 300px;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+   }
+
+
+   .footer-column-headline {
+    margin-bottom: 20px;
+   }
+
+   .footer-column-headline > h2 {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2.2px;
+    line-height: 14.82px;
+    text-transform: uppercase;
+    color: #FFF;
+  }
+
+  .footer-column-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+   }
+
+   .footer-column-item > a {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    margin-bottom: 10px;
+    color: rgb(33, 33, 33);
+    color: #FFF;
+  }
+
+   .footer-column-item > a > h3 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2.2px;
+    line-height: 14px;
+    text-align: center;
+  }
+
+    /* Написать письмо верстальщику */
+  .footer-banner-about-contacts-coder {
+    max-width: 1440px;
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 0px; 
+    margin-bottom: 50px;
+    padding-top: 10px;   
+    color: rgb(33, 33, 33);
+    background-color:  #000;
+  }
+
+  .footer-text-about-coder {  }
+
+  .footer-text-about-coder > h3 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 2.22px;
+    color: #FFF;
+   }
+
+  .footer-text-about-coder > h5 {
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 2.22px;
+    color: #FFF;
+  }
+
+  .footer-text-contacts-coder {  }
+
+  .footer-text-contacts-coder > h3 {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    color: #FFF;
+   }
+
+  .footer-text-contacts-coder > h5 {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    color: #FFF;
+  }
+
